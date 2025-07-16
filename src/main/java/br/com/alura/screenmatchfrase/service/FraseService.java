@@ -19,7 +19,7 @@ public class FraseService {
         Optional<Frase> frase = repositorio.obterFraseAleatoria();
         if (frase.isPresent()) {
             Frase f = frase.get();
-            return new FraseDTO(f.getId(), f.getTitulo(), f.getFrase(), f.getPersonagem(), f.getPoster());
+            return new FraseDTO(f.getTitulo(), f.getFrase(), f.getPersonagem(), f.getPoster());
         }
         return null;
     }

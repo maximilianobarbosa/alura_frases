@@ -1,7 +1,6 @@
 package br.com.alura.screenmatchfrase.model;
 
-public record FraseDTO(Long id,
-                       String titulo,
+public record FraseDTO(String titulo,
                        String frase,
                        String personagem,
                        String poster) {
